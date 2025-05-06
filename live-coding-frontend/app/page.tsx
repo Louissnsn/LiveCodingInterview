@@ -8,7 +8,7 @@ import { MyForm } from "./components/MyForm";
 
 export default function Home() {
   const [isConnected, setIsConnected] = useState(socket.connected);
-  const [fooEvents, setFooEvents] = useState([]);
+  const [fooEvents, setFooEvents] = useState<any[]>([]);
 
   useEffect(() => {
     function onConnect() {
